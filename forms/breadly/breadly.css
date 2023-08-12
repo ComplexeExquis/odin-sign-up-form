@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "inter";
+    src: 
+        url("/assets/fonts/Inter-VariableFont_slnt-wght.ttf")
+            format("truetype supports variations"),
+        url("/assets/fonts/Inter-VariableFont_slnt-wght.ttf")
+            format("truetype-variations");
+    font-weight: 100 1000;
+}
+
+
+
+body {
+    font-family: "inter";
+}
+
+
+.top-hero-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-container {
+    width: 100vw;
+}
+
+
+/* 
+TODO:
+- top hero section, also add clickable bottom pointed
+  arrow icon
+- form section
+- mobile design first
+- then desktop design
+
+
+
+*/
