@@ -1,0 +1,46 @@
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.choose {
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 2rem;
+    align-items: center;
+}
+
+.option {
+    background-color: antiquewhite;
+    width: 40vw;
+    height: 40vw;    
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option:hover {
+    cursor: pointer;
+    background-color: rgb(176, 165, 151);
+}
+
+/* media queries */
+/* xs */
+@media (min-width: 475px) {
+    .choose {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .option {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+
