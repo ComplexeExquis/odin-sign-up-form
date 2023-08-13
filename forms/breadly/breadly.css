@@ -12,31 +12,42 @@
 
 body {
     font-family: "inter";
+    background-color: rgb(75, 61, 61);
 }
 
 
 .top-hero-container {
     width: 100vw;
     height: 100vh;
-    background-color: red;
 }
+
+.hero-image-and-overlay-container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
 .hero-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
-.form-container {
-    width: 100vw;
+.overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.48);
+    width: 100%;
+    height: 100%;
 }
 
 
 /* 
 TODO:
-- top hero section, also add clickable bottom pointed
-  arrow icon
-  *top hero section CSS [NOW]
-
+- top hero section
+  * add clickable bottom pointed arrow icon
+  * top hero section CSS [NOW] 2
+  * overlay image
+  * header and icon
 
 
 - form section
@@ -46,3 +57,8 @@ TODO:
 
 
 */
+
+.form-container {
+    width: 100vw;
+}
+
