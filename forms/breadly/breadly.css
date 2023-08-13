@@ -21,7 +21,8 @@ body {
     height: 100vh;
 }
 
-.hero-image-and-overlay-container{
+.hero-image-and-overlay-container,
+.top-hero-container-for-overlay{
     position: relative;
     height: 100%;
     width: 100%;
@@ -40,13 +41,42 @@ body {
     height: 100%;
 }
 
+.icon-and-text-container {
+    position: absolute;
+    top: 43.13%;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.brand-icon-and-brand-name-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.brand-icon {
+    width: 44px;
+    height: 32px;
+}
+.brand-name {
+    color: white;
+    margin: 0;
+    display: flex;
+    font-size: 1.75rem;
+    
+}
+.newsletter-description {
+    margin: 0;
+    color: white;
+    font-size: 1.5rem;
+}
+
 
 /* 
 TODO:
 - top hero section
   * add clickable bottom pointed arrow icon
   * top hero section CSS [NOW] 2
-  * overlay image
   * header and icon
 
 
