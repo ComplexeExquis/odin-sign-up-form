@@ -20,7 +20,6 @@ body {
     width: 100vw;
     height: 100vh;
 }
-
 .hero-image-and-overlay-container,
 .top-hero-container-for-overlay{
     position: relative;
@@ -71,11 +70,25 @@ body {
     font-size: 1.5rem;
 }
 
+.double-down-arrow-icon {
+    position: absolute;
+    bottom: 24px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+/*
+double down arrow icon animation when clicked 
+- find the animation, make sure it's simple
+- implement it (use transform and transition)
+*/
+
+
 
 /* 
 TODO:
 - top hero section
-  * add clickable bottom pointed arrow icon
   * top hero section CSS [NOW] 2
   * header and icon
 
@@ -90,5 +103,6 @@ TODO:
 
 .form-container {
     width: 100vw;
+    height: 400px;
 }
 
