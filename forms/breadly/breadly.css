@@ -70,18 +70,32 @@ body {
     font-size: 1.5rem;
 }
 
+@keyframes double-down-arrow-icon-upAndDown-animation {
+    0%, 100% {
+        transform: translateY(-10%);
+    }
+    50% {
+        transform: translateY(10%);
+    }
+}
+
+
 .double-down-arrow-icon {
     position: absolute;
     bottom: 24px;
     margin: 0 auto;
     left: 0;
     right: 0;
+    animation-name: double-down-arrow-icon-upAndDown-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
+
+
 /*
-double down arrow icon animation when clicked 
-- find the animation, make sure it's simple
-- implement it (use transform and transition)
+double down arrow icon when clicked 
+goes to sign up page, make sure the page is 100%vh and vw
 */
 
 
