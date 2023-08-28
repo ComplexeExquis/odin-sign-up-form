@@ -8,6 +8,10 @@
     font-weight: 100 1000;
 }
 
+@font-face {
+    font-family: "inter-regular";
+    src: url(/assets/fonts/static/Inter-Regular.ttf);
+}
 
 
 body {
@@ -15,6 +19,9 @@ body {
     background-color: rgb(75, 61, 61);
 }
 
+h1 {
+    margin: 0;
+}
 
 .top-hero-container {
     width: 100vw;
@@ -93,30 +100,72 @@ body {
 
 
 
+/* 
+######################## form section ########################
+*/
+
+.form-page-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.form-container,
+.email-and-confirm-email-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.cta-text {
+    font-family: "inter-regular";
+    font-size: 2.5rem;
+    font-weight: 100px;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.input-label {
+    font-family: "inter-regular";
+    font-size: 1.5rem;
+}
+
+.input {
+    max-width: 56.41vw;
+    min-height: 2.25rem;
+}
+
+.checkbox-container {
+    flex-direction: row-reverse;
+}
+
 /*
 double down arrow icon when clicked 
 goes to sign up page, make sure the page is 100%vh and vw
 */
 
-
-
 /* 
 TODO:
-- top hero section
-  * top hero section CSS [NOW] 2
-  * header and icon
-
-
 - form section
+    - input, style, follow odin project guidelines
+      such as when it is valid or not, show certain style
+    - checkbox style
+    - button style
+    - 
+
 - mobile design first
 - then desktop design
 
-
-
 */
-
-.form-container {
-    width: 100vw;
-    height: 400px;
-}
 
