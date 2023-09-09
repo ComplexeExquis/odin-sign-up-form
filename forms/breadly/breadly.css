@@ -148,6 +148,27 @@ h1 {
 
 .checkbox-container {
     flex-direction: row-reverse;
+    gap: 8px;
+    max-width: 56.41vw;
+}
+
+#checkbox {
+    min-width: 32px;
+    height: 32px;
+}
+
+.checkbox-label {
+    font-size: 0.75rem;
+    font-family: "inter-regular";
+}
+
+.submit-btn {
+    background: #151515;
+    max-width: 56.41vw;
+    height: 4rem;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
 }
 
 /*
@@ -160,8 +181,6 @@ TODO:
 - form section
     - input, style, follow odin project guidelines
       such as when it is valid or not, show certain style
-    - checkbox style
-    - button style
     - 
 
 - mobile design first
