@@ -12,6 +12,11 @@
     font-family: "inter-regular";
     src: url(/assets/fonts/static/Inter-Regular.ttf);
 }
+@font-face {
+    font-family: "inter-semibold";
+    src: url(/assets/fonts/static/Inter-SemiBold.ttf);
+}
+
 
 html {
     scroll-behavior: smooth;
@@ -19,10 +24,16 @@ html {
 
 body {
     font-family: "inter";
-    background-color: rgb(75, 61, 61);
+    background-color: #F5F5F5;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
 }
 
@@ -75,6 +86,7 @@ h1 {
     
 }
 .newsletter-description {
+    font-family: "inter-regular";
     margin: 0;
     color: white;
     font-size: 1.5rem;
@@ -122,6 +134,12 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 24px;
+}
+
+.desktop-cta-text {
+    font-family: "inter-semibold";
+    font-size: 1.5rem;
+    display: none;
 }
 
 .cta-text {
@@ -185,7 +203,50 @@ h1 {
     font-size: 1.5rem;
 }
 
+.submit-btn:hover,
+#checkbox:hover {
+    cursor: pointer;
+}
 
+
+@media (min-width: 1024px) {
+    body {
+        display: flex;
+    }
+
+    .top-hero-container {
+        max-width: 30vw;
+    }
+
+    .double-down-arrow-icon {
+        display: none;
+    }
+
+    .form-page-container,
+    .form-container {
+        align-items: flex-start;
+    }
+    .form-page-container {
+        padding-left: min(7.7vw, 98px);
+    }
+
+    .desktop-cta-text {
+        display: inline;
+        max-width: 692px;
+    }
+
+    .desktop-cta-text.first-text {
+        display: block;
+    }
+
+    .email-and-confirm-email-container {
+        flex-direction: row;
+    }
+
+    .submit-btn {
+        width: 227px;
+    }
+}
 
 /* 
 TODO:
