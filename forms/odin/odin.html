@@ -4,12 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin sign up project</title>
-    <link rel="stylesheet" href="/assets/cssNormalize/normalize.css">
+    <link rel="stylesheet" href="./assets/cssNormalize/normalize.css">
     <link rel="stylesheet" href="./odin.css">
 </head>
 <body>
-    <h1>Odin sign up</h1>
+    <div class="hero-section-container">
+        <img class="hero-image" src="./assets/pictures/odin.jpg" alt="a bunch of leaf and trees">
+        <div class="icon-and-text-overlay-container">
+            <img src="./assets/icons/odin-lined.png" alt="The Odin Project icon">
+            <h1 class="hero-odin-logo-text">odin</h1>
+            <span class="overlay"></span>
+        </div>
 
+    </div>
+    <div class="form-section-container">
+        <div class="upper-form-container">
+            <h3 class="cta-text first-text">This is not a real service! You know you need something 
+                like this in your life to help you realize your deepest dreams.</h3>
+            <h3 class="cta-text">You know you want to.</h3> 
+            <h3 class="cta-text">Let’s do this! </h3>  
+            
+            <form id="odin-form" class="form-container" action="">
+                <div class="first-and-last-name-container">
+                    <div class="input-container">
+                        <label class="input-label" for="first-name">FIRST NAME</label>
+                        <input required class="input" type="text" name="first-name" id="first-name">
+                    </div>
+
+                    <div class="input-container">
+                        <label class="input-label" for="last-name">LAST NAME</label>
+                        <input required class="input" type="text" name="last-name" id="last-name">
+                    </div>
+                </div>
+
+                <div class="email-and-phone-number-container">
+                    <div class="input-container">
+                        <label class="input-label" for="email">EMAIL</label>
+                        <input required class="input " type="email" name="email" id="email">
+                    </div>
+
+                    <div class="input-container">
+                        <label class="input-label" for="tel">PHONE NUMBER</label>
+                        <input required class="input " type="tel" name="tel" id="tel">
+                    </div>
+                </div>
+
+                <div class="password-and-confirm-password-container">
+                    <div class="input-container">
+                        <label class="input-label" for="password">PASSWORD</label>
+                        <input required class="input " type="password" name="password" id="password">
+                    </div>
+
+                    <div class="input-container">
+                        <label class="input-label" for="confirm-password">CONFIRM PASSWORD</label>
+                        <input required class="input " type="password" name="confirm-password" id="confirm-password">
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <div class="lower-form-container">
+            <button id="bottom" class="submit-btn" type="submit" form="odin-form">Sign up</button>
+
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
     
 </body>
 </html>
