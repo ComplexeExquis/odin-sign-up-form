@@ -13,6 +13,9 @@
     src: url(/assets/fonts/static/Inter-Regular.ttf);
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: "inter";
@@ -86,7 +89,6 @@ h1 {
     }
 }
 
-
 .double-down-arrow-icon {
     position: absolute;
     bottom: 24px;
@@ -144,12 +146,24 @@ h1 {
 .input {
     max-width: 56.41vw;
     min-height: 2.25rem;
+    border: 0.50px #B9B9B9 solid;
+    background: #F2F2F2;
+}
+
+.input:valid {
+    border-color: green;
+}
+
+.input:invalid {
+    border-color: red;
 }
 
 .checkbox-container {
+    display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
     gap: 8px;
-    max-width: 56.41vw;
+    max-width: min(56.41vw ,223px);
 }
 
 #checkbox {
@@ -171,19 +185,11 @@ h1 {
     font-size: 1.5rem;
 }
 
-/*
-double down arrow icon when clicked 
-goes to sign up page, make sure the page is 100%vh and vw
-*/
+
 
 /* 
 TODO:
-- form section
-    - input, style, follow odin project guidelines
-      such as when it is valid or not, show certain style
-    - 
 
-- mobile design first
 - then desktop design
 
 */
