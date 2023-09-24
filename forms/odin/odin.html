@@ -44,12 +44,12 @@
                 <div class="email-and-phone-number-container">
                     <div class="input-container">
                         <label class="input-label" for="email">EMAIL</label>
-                        <input required class="input " type="email" name="email" id="email">
+                        <input required class="input " type="email" name="email" id="email" placeholder="odin@gmail.com">
                     </div>
 
                     <div class="input-container">
                         <label class="input-label" for="tel">PHONE NUMBER</label>
-                        <input required class="input " type="tel" name="tel" id="tel">
+                        <input required class="input " type="tel" name="tel" id="tel" placeholder="+1 (123) 456-789" pattern="\+1\s\(\d{3}\)\s\d{3}-\d{3}">
                     </div>
                 </div>
 
@@ -70,9 +70,11 @@
         <div class="lower-form-container">
             <button id="bottom" class="submit-btn" type="submit" form="odin-form">Create Account</button>
 
-            <p>Already have an account? <a href="#">Log in</a></p>
+            <p>Already have an account? <a class="lower-form-log-in-choice" href="#">Log in</a></p>
         </div>
     </div>
-    
+
+
+    <script src="./odin.js"></script>
 </body>
 </html>
