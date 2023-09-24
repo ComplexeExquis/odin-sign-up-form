@@ -2,6 +2,10 @@
     font-family: "norse-bold";
     src: url(./assets/fonts/Norse-Bold.otf);
 }
+@font-face {
+    font-family: "inter-semibold";
+    src: url(./assets/fonts/static/Inter-SemiBold.ttf);
+}
 
 
 h1,
@@ -13,6 +17,9 @@ h6,
 p {
     margin: 0;
 }
+
+/************************* hero section **************************88*/
+
 
 .hero-section-container {
     width: 100vw;
@@ -50,3 +57,28 @@ p {
     font-size: 3.5rem;
 }
 
+
+/************************* form section **************************88*/
+.form-section-container {
+    width: 100vw;
+}
+
+.cta-text {
+    font-size: 1.5rem;
+    font-family: "inter-semibold";
+    text-align: center;
+}
+
+.cta-first-text {
+    margin: 0 1rem;
+    margin-top: 4.9%;
+    margin-bottom: 1.25rem;
+}
+
+.cta-second-text {
+    margin-bottom: 1.25rem;
+}
+
+.cta-third-text {
+    margin-bottom: 0.5rem;
+}
