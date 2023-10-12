@@ -31,7 +31,7 @@ p {
 
 .hero-section-container {
     width: 100vw;
-    height: 100vh;
+    
 }
 
 
@@ -43,6 +43,7 @@ p {
 
 .hero-image {
     object-fit: cover;
+    height: 100vh;
 }
 
 .icon-and-text-overlay-container {
@@ -65,6 +66,7 @@ p {
     color: white;
     font-size: 7rem;
 }
+
 
 
 /************************* form section **************************88*/
@@ -169,3 +171,46 @@ input:invalid {
     font-size: 1rem;
 }
 
+
+
+@media (min-width: 1024px) {
+    body {
+        display: flex;
+    }
+
+    .hero-section-container{
+        max-width: 38vw;
+    }
+
+    .hero-section-overlay-container {
+        position: relative;
+        
+    }
+
+    .hero-image {
+        height: 100%;
+    }
+
+    .cta-text {
+        text-align: start;
+        margin-left: 2.5rem;
+    }
+
+    .cta-first-text {
+        margin-top: 15%;
+    }
+
+    #odin-form,
+    .lower-form-container {
+        align-items: flex-start;
+        margin-left: 2.5rem;
+    }
+
+    .first-and-last-name-container,
+    .email-and-phone-number-container,
+    .password-and-confirm-password-container {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+    }
+}
