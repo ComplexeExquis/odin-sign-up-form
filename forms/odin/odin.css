@@ -126,7 +126,7 @@ p {
 
 .input {
     max-width: 15rem;
-    max-height: 2rem;
+    min-height: 2rem;
     border: 1px solid #B9B9B9; ;
 }
 

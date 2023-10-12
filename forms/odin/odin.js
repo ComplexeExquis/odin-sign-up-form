@@ -4,7 +4,7 @@ const confirmPassInput = document.getElementById("confirm-password");
 function checkIfPasswordAreTheSame(e) {
     if (confirmPassInput.value !== passInput.value) {
         confirmPassInput.classList.add("error");
-        console.log("bad password, does notm match");
+        console.log("bad password, does not match");
 
         // submit button
         document.getElementById("bottom").disabled = true;
